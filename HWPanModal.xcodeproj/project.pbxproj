@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		07D646286406C5195E0D58C3 /* Pods_SwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E731BBFF93D4BD5774B1D2 /* Pods_SwiftDemo.framework */; };
 		1AEAE82985CAAEE26F99678B /* Pods_HWPanModalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F9099756161A2FCD7F1210 /* Pods_HWPanModalDemo.framework */; };
+		5B737026242CCC350074C79A /* HWPanModalContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B737022242CCC350074C79A /* HWPanModalContainerView.m */; };
+		5B737027242CCC350074C79A /* HWPanModalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B737025242CCC350074C79A /* HWPanModalContentView.m */; };
 		7E044BC9233DEF1000D01981 /* HWMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E044BC8233DEF1000D01981 /* HWMapViewController.m */; };
 		7E044BCB233DEF2400D01981 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E044BCA233DEF2400D01981 /* MapKit.framework */; };
 		7E044BCE233E070400D01981 /* HWEventPassThroughViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E044BCD233E070400D01981 /* HWEventPassThroughViewController.m */; };
@@ -79,6 +81,10 @@
 
 /* Begin PBXFileReference section */
 		1D0B2D9E2EA6FB304D1D0FB2 /* HWPanModal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HWPanModal.h; sourceTree = "<group>"; };
+		5B737022242CCC350074C79A /* HWPanModalContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalContainerView.m; sourceTree = "<group>"; };
+		5B737023242CCC350074C79A /* HWPanModalContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalContentView.h; sourceTree = "<group>"; };
+		5B737024242CCC350074C79A /* HWPanModalContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalContainerView.h; sourceTree = "<group>"; };
+		5B737025242CCC350074C79A /* HWPanModalContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalContentView.m; sourceTree = "<group>"; };
 		70F9099756161A2FCD7F1210 /* Pods_HWPanModalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWPanModalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E731BBFF93D4BD5774B1D2 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E044BC7233DEF1000D01981 /* HWMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWMapViewController.h; sourceTree = "<group>"; };
@@ -270,6 +276,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		5B737021242CCC350074C79A /* PanModal */ = {
+			isa = PBXGroup;
+			children = (
+				5B737024242CCC350074C79A /* HWPanModalContainerView.h */,
+				5B737022242CCC350074C79A /* HWPanModalContainerView.m */,
+				5B737023242CCC350074C79A /* HWPanModalContentView.h */,
+				5B737025242CCC350074C79A /* HWPanModalContentView.m */,
+			);
+			path = PanModal;
+			sourceTree = "<group>";
+		};
 		7E044BC6233DEE9400D01981 /* EventThrough */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +476,7 @@
 		7EA0F560230D5B7300ED20D2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B737021242CCC350074C79A /* PanModal */,
 				7EA0F568230D5B7300ED20D2 /* HWPanModalIndicatorProtocol.h */,
 				7EA0F566230D5B7300ED20D2 /* HWDimmedView.h */,
 				7EA0F562230D5B7300ED20D2 /* HWDimmedView.m */,
@@ -1063,6 +1081,7 @@
 				7EA0F601230D63D300ED20D2 /* HWMyCustomAnimationViewController.m in Sources */,
 				7EA0F60C230D63D300ED20D2 /* HWTextInputViewController.m in Sources */,
 				7EA0F612230D63D300ED20D2 /* HWBlurViewController.m in Sources */,
+				5B737026242CCC350074C79A /* HWPanModalContainerView.m in Sources */,
 				7E2424992325FECE00421947 /* HWFetchDataViewController.m in Sources */,
 				7EA0F608230D63D300ED20D2 /* HWPickerViewController.m in Sources */,
 				7EC329C123CEB17A002F878C /* HWCollectionPanModalView.m in Sources */,
@@ -1078,6 +1097,7 @@
 				7EC3DEFA23A73EB3005B9968 /* UIDevice+HW.m in Sources */,
 				7ED9DE7D235987C700AE8A60 /* HWTestViewPanModalController.m in Sources */,
 				7E044BC9233DEF1000D01981 /* HWMapViewController.m in Sources */,
+				5B737027242CCC350074C79A /* HWPanModalContentView.m in Sources */,
 				7EA0F613230D63D300ED20D2 /* HWColorCell.m in Sources */,
 				7EA0F614230D63D300ED20D2 /* HWShoppingCartViewController.m in Sources */,
 				7EC329C423CEB2E5002F878C /* UIColor+HW.m in Sources */,
