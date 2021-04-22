@@ -480,7 +480,7 @@ static NSString *const kScrollViewKVOContentOffsetKey = @"contentOffset";
         return;
 
     self.keyboardInfo = notification.userInfo;
-    CGRect beginUserInfo = [self.keyboardInfo objectForKey:UIKeyboardFrameEndUserInfoKey];
+    CGRect beginUserInfo = [[self.keyboardInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     if (beginUserInfo.size.height <= 0) {
         return;
     }
